@@ -1,8 +1,6 @@
  
-----WEB-APP----
-app_meta.php                                  |    2 +-
-teacher/front-end/dataDashboard/pbgrReport.js |   72 ++++++++++++++++++++++++-
-teacher/html/dataDashboard/pbgrReport.html    |    4 +-
 ----API----
-api/application/controllers/Reports.php  |   30 ++++++++++++++
-api/application/models/Model_reports.php |   64 ++++++++++++++++++++++++++++++
+api/application/controllers/LearningPlans.php |   53 +++++++++++++++++++------
+api/application/models/Model_goal.php         |    4 +-
+----API----
+api/application/controllers/LearningPlans.php |    4 ++--
