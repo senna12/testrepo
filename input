@@ -1,11 +1,3 @@
-Unpacking objects: 100% (13/13), done.
-From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
-  3d08782..e00aa44  master     -> origin/master
-  0cd69b1..ec3cd57  production -> origin/production
-From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
-* branch            production -> FETCH_HEAD
-Updating 0cd69b1..ec3cd57
-Fast-forward
 app_meta.php                                  |    2 +-
 teacher/front-end/dataDashboard/pbgrReport.js |   72 ++++++++++++++++++++++++-
 teacher/html/dataDashboard/pbgrReport.html    |    4 +-
