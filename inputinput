@@ -1,8 +1,7 @@
 app_meta.php                                  |    2 +-
 teacher/front-end/dataDashboard/pbgrReport.js |   72 ++++++++++++++++++++++++-
 teacher/html/dataDashboard/pbgrReport.html    |    4 +-
-teacher/html/casdchanged/pbgrReport.html      |    5 +-
-4 files changed, 73 insertions(+), 5 deletions(-)
+3 files changed, 73 insertions(+), 5 deletions(-)
 Downloading  API Files
 remote: Counting objects: 8, done.
 remote: Compressing objects: 100% (8/8), done.
@@ -17,5 +16,4 @@ Updating 9f386c5..7e2c4f1
 Fast-forward
 api/application/controllers/Reports.php  |   30 ++++++++++++++
 api/application/models/Model_reports.php |   64 ++++++++++++++++++++++++++++++
-api/application/controllers/Reports.php  |   30 ++++++++++++++
-3 files changed, 94 insertions(+), 0 deletions(-)
+2 files changed, 94 insertions(+), 0 deletions(-)
