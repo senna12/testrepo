@@ -19,7 +19,7 @@ CTR=1
 END=0
 RAV=$EndOfLine
 while [ $RAV -ne 0 ] ; do
-	eval "END"$CTR=$(nl $FILE |  grep " changed" | tr -d " " | tr "\t" " " | cut -d" " -f1 | sed -n $CTR"p")
+	eval "END"$CTR=$(nl -ba $FILE |  grep " changed" | tr -d " " | tr "\t" " " | cut -d" " -f1 | sed -n $CTR"p")
 	((CTR++))
 	((RAV--))
 done
@@ -30,7 +30,7 @@ API=( )
 while [ $NoOfStart -ne 0 ] ; do
 	while [ $((START$CTR)) -ne $((END$CTR)) ] ; do
 	NUM=$((START$CTR))
-	nl $FILE | tr -d " " | tr "\t" " " | grep "^$NUM " | grep "api/application" > /dev/null
+	nl -ba $FILE | tr -d " " | tr "\t" " " | grep "^$NUM " | grep "api/application" > /dev/null
 
 	if [ $? -eq 1 ] ; then
 		WEBAPP=(${WEBAPP[*]} $NUM)
