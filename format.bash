@@ -24,23 +24,35 @@ while [ $RAV -ne 0 ] ; do
 	((RAV--))
 done
 
-touch $(pwd)/output.txt
-echo " " > $(pwd)/output.txt
 CTR=1
+WEBAPP=( )
+API=( )
 while [ $NoOfStart -ne 0 ] ; do
-		if [ $CTR -eq 1 ] ; then
-			echo "----WEB-APP----" >> $(pwd)/output.txt
-		elif [ $CTR -eq 2 ] ; then
-			echo "----API----" >> $(pwd)/output.txt
-		fi
 	while [ $((START$CTR)) -ne $((END$CTR)) ] ; do
-		NUM=$((START$CTR))
-		sed -n $NUM"p" $FILE >> $(pwd)/output.txt
-		((START$CTR++))
+	NUM=$((START$CTR))
+	nl $FILE | tr -d " " | tr "\t" " " | grep "^$NUM " | grep "api/application" > /dev/null
+
+	if [ $? -eq 1 ] ; then
+		WEBAPP=(${WEBAPP[*]} $NUM)
+	else
+		API=(${API[*]} $NUM)
+	fi
+	((START$CTR++))
 	done
-	((NoOfStart--))
-	((CTR++))
+((CTR++))
+((NoOfStart--))	
 done
 
-
+touch $(pwd)/output.txt
+echo " " > $(pwd)/output.txt
+echo "---WEB-APP---" >> $(pwd)/output.txt
+for VAR in ${WEBAPP[*]}
+do
+	sed -n $VAR"p" $FILE >> $(pwd)/output.txt
+done 
+echo -e "\n---API---" >> $(pwd)/output.txt
+for VAR in ${API[*]}
+do
+	sed -n $VAR"p" $FILE >> $(pwd)/output.txt
+done
 exit 0
