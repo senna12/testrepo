@@ -1,27 +1,33 @@
-Unpacking objects: 100% (13/13), done.
-From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
-  3d08782..e00aa44  master     -> origin/master
-  0cd69b1..ec3cd57  production -> origin/production
-From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
-* branch            production -> FETCH_HEAD
-Updating 0cd69b1..ec3cd57
-Fast-forward
-app_meta.php                                  |    2 +-
-teacher/front-end/dataDashboard/pbgrReport.js |   72 ++++++++++++++++++++++++-
-teacher/html/dataDashboard/pbgrReport.html    |    4 +-
-3 files changed, 73 insertions(+), 5 deletions(-)
-Downloading  API Files
-remote: Counting objects: 8, done.
-remote: Compressing objects: 100% (8/8), done.
-remote: Total 8 (delta 0), reused 0 (delta 0)
-Unpacking objects: 100% (8/8), done.
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 15 (delta 5), reused 0 (delta 0)
+Unpacking objects: 100% (15/15), done.
 From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-ap                                                                             i
-  9f386c5..7e2c4f1  master     -> origin/master
-  9f386c5..7e2c4f1  production -> origin/production
+  28958d5..db9ca71  master     -> origin/master
+  28958d5..db9ca71  production -> origin/production
+* [new tag]         v2.2.13_2019-03-13 -> v2.2.13_2019-03-13
+[root@591436-web2 api_v1]# git pull origin production
 From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-ap                                                                             i
 * branch            production -> FETCH_HEAD
-Updating 9f386c5..7e2c4f1
+Updating 28958d5..db9ca71
 Fast-forward
-api/application/controllers/Reports.php  |   30 ++++++++++++++
-api/application/models/Model_reports.php |   64 ++++++++++++++++++++++++++++++
-2 files changed, 94 insertions(+), 0 deletions(-)
+api/application/controllers/LearningPlans.php |   53 +++++++++++++++++++------
+api/application/models/Model_goal.php         |    4 +-
+2 files changed, 42 insertions(+), 15 deletions(-)
+[root@591436-web2 api_v1]#
+
+[root@591433-web1 api_v1]# git fetch
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (6/6), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+  db9ca71..440880e  master     -> origin/master
+  db9ca71..440880e  production -> origin/production
+[root@591433-web1 api_v1]# git pull origin production
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+* branch            production -> FETCH_HEAD
+Updating db9ca71..440880e
+Fast-forward
+api/application/controllers/LearningPlans.php |    4 ++--
+1 files changed, 2 insertions(+), 2 deletions(-)
