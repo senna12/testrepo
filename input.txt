@@ -15,7 +15,6 @@ api/application/controllers/LearningPlans.php |   53 +++++++++++++++++++------
 api/application/models/Model_goal.php         |    4 +-
 2 files changed, 42 insertions(+), 15 deletions(-)
 [root@591436-web2 api_v1]#
-
 [root@591433-web1 api_v1]# git fetch
 remote: Counting objects: 6, done.
 remote: Compressing objects: 100% (6/6), done.
