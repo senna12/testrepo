@@ -1,0 +1,217 @@
+WEB1
+Downloading Webapp files
+remote: Counting objects: 231, done.
+remote: Compressing objects: 100% (146/146), done.
+remote: Total 231 (delta 143), reused 135 (delta 85)
+Receiving objects: 100% (231/231), 120.26 KiB | 7 KiB/s, done.
+Resolving deltas: 100% (143/143), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+   bad63f2..81954fe  master     -> origin/master
+   35f61e2..b1076e7  production -> origin/production
+ * [new tag]         v2.1.8_2019-02-22 -> v2.1.8_2019-02-22
+ * [new tag]         v2.1.8_2019-02-22_2 -> v2.1.8_2019-02-22_2
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+ * branch            production -> FETCH_HEAD
+Auto-merging student/factory/learningPlansModel.js
+Auto-merging teacher/front-end/home.js
+Removing teacher/front-end/reports/sspReportWindow.js
+Merge made by recursive.
+Auto packing the repository for optimum performance. You may also
+run "git gc" manually. See "git help gc" for more information.
+Counting objects: 56060, done.
+Delta compression using up to 24 threads.
+Compressing objects: 100% (13330/13330), done.
+Writing objects: 100% (56060/56060), done.
+Total 56060 (delta 45941), reused 52029 (delta 42248)
+Removing stale temporary file .git/objects/pack/tmp_pack_NaSjzP
+Removing stale temporary file .git/objects/pack/tmp_pack_FUil98
+ student/factory/learningPlansModel.js              |    3 +-
+ .../front-end/learningPlans/ActivitiesCustom.js    |    4 +-
+ student/front-end/learningPlans/MyLearningPlans.js |    9 +-
+ student/front-end/learningPlans/scattergram.js     |    4 +-
+ student/html/dialogs/artifactsDialog.html          |    2 +-
+ student/html/learningPlans/scattergram.html        |   19 +-
+ teacher/factory/dropdownModel.js                   |    4 +-
+ teacher/factory/entryModel.js                      |   19 +-
+ teacher/factory/rubricModel.js                     |   15 +-
+ .../admin/adminLessonPlans/adminCareerCluster.js   |   71 ++--
+ teacher/front-end/assignment/EditAssignment.js     |    8 +-
+ teacher/front-end/class/studentList.js             |   26 +-
+ teacher/front-end/dataDashboard/ccrReportAdmin.js  |   16 +-
+ .../front-end/dataDashboard/ccrSummarySelect.js    |    4 +-
+ teacher/front-end/entry/QuickAssess.js             |    5 +-
+ teacher/front-end/entry/RecentEntries.js           |    2 +-
+ teacher/front-end/home.js                          |   17 +-
+ teacher/front-end/reports/sspReport.js             |  134 ++++++-
+ teacher/front-end/reports/sspReportView.js         |  441 ++++----------------
+ teacher/front-end/reports/sspReportWindow.js       |  186 --------
+ .../adminLessonPlans/viewAdminCareerCluster.html   |    2 +-
+ teacher/html/assignment/EditAssignment.html        |    8 +-
+ teacher/html/class/viewClasslist.html              |    2 +-
+ teacher/html/class/viewStudentList.html            |    2 +-
+ .../admin/adminCareerPathwayEditorDialog.html      |    6 +-
+ teacher/html/home.html                             |   19 +-
+ teacher/html/reports/sspAdvisoryReport.html        |    2 +-
+ teacher/html/reports/sspReport.html                |    6 +-
+ teacher/index.php                                  |    1 -
+ teacher/services/service.js                        |    1 +
+ 30 files changed, 403 insertions(+), 635 deletions(-)
+ delete mode 100644 teacher/front-end/reports/sspReportWindow.js
+Downloading  API Files
+remote: Counting objects: 163, done.
+remote: Compressing objects: 100% (75/75), done.
+remote: Total 163 (delta 111), reused 121 (delta 88)
+Receiving objects: 100% (163/163), 123.21 KiB | 7 KiB/s, done.
+Resolving deltas: 100% (111/111), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+   1f6a04f..31cbddc  master     -> origin/master
+   25e2424..71bc310  production -> origin/production
+ * [new tag]         v2.1.8_2019-02-22 -> v2.1.8_2019-02-22
+ * [new tag]         v2.1.8_2019-02-22_2 -> v2.1.8_2019-02-22_2
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+ * branch            production -> FETCH_HEAD
+Auto-merging api/application/controllers/LearningPlans.php
+Auto-merging api/application/controllers/Reports.php
+Merge made by recursive.
+ api/application/controllers/Entry.php          |   43 ++++-
+ api/application/controllers/LearningPlans.php  |    4 +-
+ api/application/controllers/Reports.php        |    7 +-
+ api/application/models/Model_department.php    |    4 +-
+ api/application/models/Model_entry.php         |   41 ++++-
+ api/application/models/Model_learningplans.php |    3 +
+ api/application/models/Model_rubric.php        |   19 ++-
+ scripts/providenceStudentFafsaMailer.php       |  263 ++++++++++++++++++++++++
+ 8 files changed, 373 insertions(+), 11 deletions(-)
+ create mode 100644 scripts/providenceStudentFafsaMailer.php
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 1), reused 4 (delta 1)
+Unpacking objects: 100% (5/5), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+   81954fe..fa6cebe  master     -> origin/master
+   b1076e7..968a29a  production -> origin/production
+[root@591436-web2 webapp]# git pull origin production
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+ * branch            production -> FETCH_HEAD
+Merge made by recursive.
+ app_meta.php |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+remote: Counting objects: 1, done.
+remote: Total 1 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (1/1), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+ * branch            production -> FETCH_HEAD
+Auto-merging api/application/controllers/LearningPlans.php
+Merge made by recursive.
+ api/application/controllers/LearningPlans.php  |    6 +++---
+ api/application/models/Model_learningplans.php |    4 ++--
+ 2 files changed, 5 insertions(+), 5 deletions(-)
+
+WEB2
+Downloading Webapp files
+remote: Counting objects: 231, done.
+remote: Compressing objects: 100% (146/146), done.
+remote: Total 231 (delta 143), reused 135 (delta 85)
+Receiving objects: 100% (231/231), 120.26 KiB | 7 KiB/s, done.
+Resolving deltas: 100% (143/143), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+   bad63f2..81954fe  master     -> origin/master
+   35f61e2..b1076e7  production -> origin/production
+ * [new tag]         v2.1.8_2019-02-22 -> v2.1.8_2019-02-22
+ * [new tag]         v2.1.8_2019-02-22_2 -> v2.1.8_2019-02-22_2
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+ * branch            production -> FETCH_HEAD
+Auto-merging student/factory/learningPlansModel.js
+Auto-merging teacher/front-end/home.js
+Removing teacher/front-end/reports/sspReportWindow.js
+Merge made by recursive.
+Auto packing the repository for optimum performance. You may also
+run "git gc" manually. See "git help gc" for more information.
+Counting objects: 56068, done.
+Delta compression using up to 24 threads.
+Compressing objects: 100% (9663/9663), done.
+Writing objects: 100% (56068/56068), done.
+Total 56068 (delta 45992), reused 55986 (delta 45923)
+Removing stale temporary file .git/objects/pack/tmp_pack_FUil98
+Removing stale temporary file .git/objects/pack/tmp_pack_NaSjzP
+ student/factory/learningPlansModel.js              |    3 +-
+ .../front-end/learningPlans/ActivitiesCustom.js    |    4 +-
+ student/front-end/learningPlans/MyLearningPlans.js |    9 +-
+ student/front-end/learningPlans/scattergram.js     |    4 +-
+ student/html/dialogs/artifactsDialog.html          |    2 +-
+ student/html/learningPlans/scattergram.html        |   19 +-
+ teacher/factory/dropdownModel.js                   |    4 +-
+ teacher/factory/entryModel.js                      |   19 +-
+ teacher/factory/rubricModel.js                     |   15 +-
+ .../admin/adminLessonPlans/adminCareerCluster.js   |   71 ++--
+ teacher/front-end/assignment/EditAssignment.js     |    8 +-
+ teacher/front-end/class/studentList.js             |   26 +-
+ teacher/front-end/dataDashboard/ccrReportAdmin.js  |   16 +-
+ .../front-end/dataDashboard/ccrSummarySelect.js    |    4 +-
+ teacher/front-end/entry/QuickAssess.js             |    5 +-
+ teacher/front-end/entry/RecentEntries.js           |    2 +-
+ teacher/front-end/home.js                          |   17 +-
+ teacher/front-end/reports/sspReport.js             |  134 ++++++-
+ teacher/front-end/reports/sspReportView.js         |  441 ++++----------------
+ teacher/front-end/reports/sspReportWindow.js       |  186 --------
+ .../adminLessonPlans/viewAdminCareerCluster.html   |    2 +-
+ teacher/html/assignment/EditAssignment.html        |    8 +-
+ teacher/html/class/viewClasslist.html              |    2 +-
+ teacher/html/class/viewStudentList.html            |    2 +-
+ .../admin/adminCareerPathwayEditorDialog.html      |    6 +-
+ teacher/html/home.html                             |   19 +-
+ teacher/html/reports/sspAdvisoryReport.html        |    2 +-
+ teacher/html/reports/sspReport.html                |    6 +-
+ teacher/index.php                                  |    1 -
+ teacher/services/service.js                        |    1 +
+ 30 files changed, 403 insertions(+), 635 deletions(-)
+ delete mode 100644 teacher/front-end/reports/sspReportWindow.js
+Downloading  API Files
+remote: Counting objects: 163, done.
+remote: Compressing objects: 100% (75/75), done.
+remote: Total 163 (delta 111), reused 121 (delta 88)
+Receiving objects: 100% (163/163), 123.21 KiB | 8 KiB/s, done.
+Resolving deltas: 100% (111/111), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+   1f6a04f..31cbddc  master     -> origin/master
+   25e2424..71bc310  production -> origin/production
+ * [new tag]         v2.1.8_2019-02-22 -> v2.1.8_2019-02-22
+ * [new tag]         v2.1.8_2019-02-22_2 -> v2.1.8_2019-02-22_2
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+ * branch            production -> FETCH_HEAD
+Auto-merging api/application/controllers/LearningPlans.php
+Auto-merging api/application/controllers/Reports.php
+Merge made by recursive.
+ api/application/controllers/Entry.php          |   43 ++++-
+ api/application/controllers/LearningPlans.php  |    4 +-
+ api/application/controllers/Reports.php        |    7 +-
+ api/application/models/Model_department.php    |    4 +-
+ api/application/models/Model_entry.php         |   41 ++++-
+ api/application/models/Model_learningplans.php |    3 +
+ api/application/models/Model_rubric.php        |   19 ++-
+ scripts/providenceStudentFafsaMailer.php       |  263 ++++++++++++++++++++++++
+ 8 files changed, 373 insertions(+), 11 deletions(-)
+ create mode 100644 scripts/providenceStudentFafsaMailer.php
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 1), reused 4 (delta 1)
+Unpacking objects: 100% (5/5), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+   81954fe..fa6cebe  master     -> origin/master
+   b1076e7..968a29a  production -> origin/production
+[root@591433-web1 webapp]# git pull origin production
+From ssh://testing.brightideastechnology.com:9022/chrome-app/web-app
+ * branch            production -> FETCH_HEAD
+Merge made by recursive.
+ app_meta.php |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+remote: Counting objects: 1, done.
+remote: Total 1 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (1/1), done.
+From ssh://testing.brightideastechnology.com:9022/chrome-app/digitalportfolio-api
+ * branch            production -> FETCH_HEAD
+Auto-merging api/application/controllers/LearningPlans.php
+Merge made by recursive.
+ api/application/controllers/LearningPlans.php  |    6 +++---
+ api/application/models/Model_learningplans.php |    4 ++--
+ 2 files changed, 5 insertions(+), 5 deletions(-)
